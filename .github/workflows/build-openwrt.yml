@@ -59,9 +59,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Lienol_source]
+        target: [Lede_source_cr660x_home]
 
-        # [Lede_source,Lienol_source,Mortal_source,Tianling_source,openwrt_amlogic]
+        # [Lede_source_cr660x_home,Lede_source,Lienol_source,Mortal_source,Tianling_source,openwrt_amlogic]
 
     
     steps:
