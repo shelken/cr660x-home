@@ -38,6 +38,9 @@ uci set network.ipv6.reqprefix='auto'
 uci set firewall.@zone[0].network='lan ipv6'
 EOF
 
+# 添加其他插件
+# dnspod
+git clone https://github.com/ntlf9t/luci-app-dnspod.git package/luci-app-dnspod
 
 # 设置 argon 为编译必选主题(可自行修改您要的,主题名称必须对,源码内必须有该主题)
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
